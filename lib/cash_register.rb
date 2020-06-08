@@ -13,7 +13,7 @@ def add_item(title,price,quantity=1)
   @item << quantity
 end
 
-def item
+def items
   @item
 end
   
