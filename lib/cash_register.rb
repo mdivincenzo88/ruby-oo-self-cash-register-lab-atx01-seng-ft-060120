@@ -8,7 +8,7 @@ def initialize(discount=0)
   end
 
 def add_item(title,price,quantity=1)
-@last_transaction = price
+@last_transaction = price * quantity
   @total+=price*quantity
   
   if quantity>1
