@@ -30,7 +30,8 @@ end
 def void_last_transaction
   @total = @total - @last_transaction
   
-  if @total = 0 
+  if @total < 0
+    return 0.0
 end
 
 def apply_discount
